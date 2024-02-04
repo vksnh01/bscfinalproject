@@ -1,0 +1,121 @@
+.message-main-div{
+    box-shadow: 0px 0px 10px 3px gray;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 7px;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+}
+.title-card{
+    background-color: rgb(184, 178, 178);
+    width: 100%;
+    height: 4rem;
+}
+.title-card > h1{
+    line-height: 60px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+.message-card{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+    background: white;
+    z-index: 1;
+}
+.message-card > .message-img-div{
+    position: relative;
+    top: 100px;
+}
+.message-card > .message-img-div > img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #817e7e;
+}
+.message-card > .message-text-div{
+    padding: 10px 28px;
+    
+}
+.message-card > .message-text-div > h2{
+    line-height: 60px;
+    padding-left: 20px;
+    text-transform: capitalize;
+    color: #ff8888;
+    }
+    .message-card > .message-text-div > p{
+        word-break: break-all;
+        word-spacing: 3px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #5d2121;
+    }
+    #open{
+        display: block;
+    }
+    .close{
+        display: none;
+    }
+    .close-btn{
+        position: absolute;
+        top: 1%;
+        right: 5%;
+        text-decoration: none;
+        color: red;
+        background: white;
+        border-radius: 10px;
+        font-size: 21px;
+        font-weight: bold;
+        width: 5%;
+        text-align: center;
+    }
+    .close-btn:hover{
+        border: none;
+        color: white;
+        background: red;
+        border-radius: 10px;
+    }
+    @media (max-width:999px){
+        .close-btn{
+            top: 13px;
+            right: 4%;
+            width: 10%;
+        }
+    }
+    @media (max-width:500px) {
+        .close-btn{
+            top: 13px;
+            right: 4%;
+            width: 17%;
+        }
+        .message-card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .message-card > .message-img-div {
+            position: relative;
+            top: 13px;
+        }
+        .message-card > .message-text-div {
+            padding: 10px 5px;
+            border-bottom: 1px solid black;
+            margin-bottom: 15px;
+        }
+        .message-card > .message-text-div > p {
+            word-break: break-all;
+            word-spacing: 5px;
+            font-size: 17px;
+            font-weight: 500;
+            color: gray;
+            letter-spacing: 1px;
+        }
+    }

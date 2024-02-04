@@ -1,0 +1,174 @@
+.library-main-div{
+    width: 90%;
+    height: 80vh;
+    margin: 1% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+  
+}
+.library-main-div > .table-main-title{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.library-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.library-cards > .library-card{
+    /* border: 2px solid black; */
+    width: 21%;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+    margin-top: 80px;
+    background-size: cover;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+
+}
+.library-cards > .library-card > a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    align-items: center;
+    margin-top: 15%;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.library-cards > .library-card >a:hover {
+    border: none;
+    color: white;
+
+}
+.digital{
+    background: url('../../ImgFolder/digitalLibrary.jpg');
+ 
+}
+.bridge{
+    background: url('../../ImgFolder/bridgeLibrary.jpg');
+ 
+}
+.higher{
+    background: url('../../ImgFolder/higherLibrary.jpg');
+ 
+}
+
+/* Digital Library */
+.digital-main-div{
+    height: auto;
+    position: absolute;
+    top: 3%;
+    background: white;
+    width: 98%;
+    margin: 0;
+    left: 1%;
+    
+    
+}
+#close{
+    display: none;
+}
+.digital-main-div > .library-cards{
+    margin-bottom: 5%;
+}
+.digital-main-div > .table-main-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.digital-main-div > .table-main-title > .Cbtn{
+    width: 6%;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f9e000, #ffe500);
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+}
+.digital-main-div > .table-main-title >.Cbtn:hover{
+    color: red;
+    background: white;
+
+}
+.library-card-div{
+    box-shadow: 0px 0px 10px 0px;
+    width: 90%;
+    height: auto;
+    margin-top: 17px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.library-card-div > img{
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+}
+.library-card-text-div{
+    width: 60%;
+    margin: 20px;
+}
+.library-card-text-div > h2{
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 500;
+    text-align: start;
+    color: #e15757;
+    margin-top: 10px;
+}
+.library-card-text-div > p{
+    font-size: 16px;
+    color: #676464;
+    word-break: break-all;
+    word-spacing: 1px;
+    /* letter-spacing: 1px; */
+    word-break: break-all;
+}
+.library-card-text-div > p > a{
+    color: rgb(17, 124, 187);
+    border: none;
+    text-decoration: none;
+
+}
+.library-card-text-div > p > a:hover{
+    color: rgb(219, 4, 4);
+}
+@media (max-width:500px) {
+    .library-main-div {
+        height: auto;
+    }
+    .library-main-div  > .library-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .library-cards > .library-card {
+        width: 70%;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+}
+

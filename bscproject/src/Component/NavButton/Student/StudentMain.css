@@ -1,0 +1,381 @@
+.student-main-div {
+  width: 100%;
+  min-height: 10vh;
+  /* height: auto; */
+  max-height: 20vh;
+  /* border: 2px solid black; */
+  background: linear-gradient(177deg, rgb(36, 36, 75), #5e5e9f);
+  color: white;
+}
+.student-nav {
+  display: block;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 20vh;
+}
+.student-nav > ul > li > a.active {
+  color: orange;
+}
+.student-nav > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+.student-nav > ul > li > a {
+  color: rgb(180, 179, 179);
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in;
+  padding: 5px;
+  font-weight: 400px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.student-nav > ul > li > a:hover {
+  border: 1px solid aliceblue;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px;
+}
+/* AddmissionProcess */
+.Student-main-card-div {
+  width: 95%;
+  height: auto;
+  /* border: 2px solid; */
+  color: black;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px;
+}
+.Student-main-card-div > .student-main-title {
+  width: 100%;
+  height: 7vh;
+  background: #7f7f7f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2px 0px;
+}
+.Student-main-card-div > ul {
+  margin: 20px 0px;
+  word-break: break-all;
+  width: 100%;
+  padding: 30px;
+}
+.Student-main-card-div > ul > li > p,
+.second-div > p {
+  color: gray;
+  word-break: break-all;
+}
+.Student-main-card-div > ul > li > p > span {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 5px;
+  color: black;
+}
+.ls {
+  list-style: disc;
+}
+.second-div {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.second-div > p {
+  color: rgb(53, 50, 50);
+}
+.second-div > ul > li {
+  color: gray;
+  word-break: break-all;
+}
+/* Arc */
+.arc-main-div > h4 {
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.arc-main-div > p {
+  margin: 0px;
+  padding: 10px 20px;
+  font-weight: 400;
+  color: #343232;
+  font-size: 18px;
+}
+.arc-ul {
+  margin: 0px 0px !important;
+  word-break: break-all;
+  width: 100%;
+  padding: 10px 30px !important;
+}
+.arc-ul > li > p {
+  padding: 0px 5px;
+  word-break: break-word !important;
+}
+.dark {
+  color: black !important;
+  font-weight: bold !important;
+} /*Computer Cell*/
+.inner-section {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Student-text-div {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  color: gray;
+  text-transform: inherit;
+  font-size: 18px;
+  word-break: break-all;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 0px 30px;
+}
+.inner-section > .Student-text-div > p > span,
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(83, 79, 79);
+  text-decoration: underline;
+}
+.inner-section > .Student-img-div {
+  width: 95%;
+  height: auto;
+  margin: auto auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(51, 1, 1);
+} */
+/*Course Offered*/
+.Student-table,
+.Fees-structure {
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  padding: 10px;
+}
+.Student-table > thead,
+.Fees-structure > thead {
+  background: white !important;
+}
+.Student-table > thead > tr {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 16% 40% 6% 12% 16%;
+  background: linear-gradient(45deg, #3246b7, #673ab7) !important;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  grid-gap: 13px;
+  text-align: center;
+}
+
+.Student-table > thead > tr > th {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+.table-data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 16% 40% 6% 12% 16%;
+  align-items: center;
+  grid-gap: 13px;
+  text-align: center;
+  font-size: 18px;
+}
+.Student-table > thead > tr:hover {
+  background: linear-gradient(45deg, #4c4c4d, #3d3d3f);
+  color: white !important;
+  cursor: pointer;
+}
+
+.even {
+  color: rgb(36, 29, 29) !important;
+  background: rgb(193, 192, 192);
+  text-align: center;
+}
+.odd:hover,
+.even:hover {
+  background: rgb(170, 168, 168);
+  color: whitesmoke !important;
+}
+.odd {
+  color: rgb(0, 0, 0) !important;
+  background: rgb(202, 200, 200);
+}
+
+/*Fees Structure*/
+.fs-table {
+  width: 100%;
+  color: black;
+  margin: 20px 0px;
+}
+.fs-table > .Fees-structure {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.fs-table > .Fees-structure > tr {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 19% 10% 10% 10% 10% 10% 10% !important;
+  grid-gap: 2px;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: space-around;
+  justify-items: center;
+  background: linear-gradient(45deg, #3246b7, #673ab7) !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+.fs-table > tbody > tr {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 19% 10% 10% 10% 10% 10% 10% !important;
+  grid-gap: 2px;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: space-around;
+  justify-items: center;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 18px;
+  padding: 5px;
+}
+.dEven {
+  background-color: #e9e6e6;
+}
+.dEven:hover {
+  background: #c3bfbf;
+  color: black;
+  font-weight: 500;
+}
+.dOdd {
+  background-color: #fbe0e0;
+}
+.dOdd:hover {
+  background: #c3bfbf;
+  color: black;
+  font-weight: 500;
+}
+.fs-table > .Fees-structure > tr > th {
+  font-size: 20px;
+  font-weight: 400;
+}
+/*Hostel COntenter*/
+.hostel-main-div {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid black; */
+}
+.hostel-main-div > .bg {
+  opacity: 0.7;
+}
+.hostel-text-div {
+  width: 100%;
+  padding: 2%;
+}
+.hostel-text-div > h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.hostel-text-div > p {
+  word-break: break-all;
+}
+.hostel-text-div > .span {
+  margin-top: 20px;
+}
+.hostel-faculty-div {
+  font-size: 29px;
+  line-height: 50px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  background: #e7e5e5;
+  /* background: linear-gradient(45deg,rgb(138, 133, 133),rgb(221, 205, 205)); */
+  height: auto;
+}
+
+.hostel-facility-card-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  background: #e7e5e5;
+}
+ul > .left-bdr{
+  border-bottom: 1px solid #dddcdc!important;
+}
+.hostel-facility-card-div >  .center-bdr{
+  border-bottom: 1px solid #dddcdc;
+  border-left: 1px solid #dddcdc;
+  border-right: 1px solid #dddcdc;
+}
+.hostel-facility-card-div >  .right-bdr{
+  border-bottom: 1px solid #dddcdc;
+}
+.hostel-facility-card-div >  .bottm-bdr{
+  border-left: 1px solid #dddcdc;
+  border-right: 1px solid #dddcdc;
+}
+.hostel-facility-card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #e7e5e5;
+  font-size: 16px;
+  color: #494747;
+  font-weight: 500;
+  height: 30vh;
+  width: 30%;
+  word-spacing: 1px;
+  text-transform: capitalize;
+}
+.hostel-faculty-logo {
+  /* height: 13vh; */
+  width: 30%;
+  /* color: white; */
+}
+.hostel-fees-table{
+  border: 2px solid black;
+  width: 100%;
+  height: 50vh;
+}
+@media (max-width: 500px) {
+  /* .student-main-div{
+        height: 20vh;
+    }*/
+  .student-nav {
+    height: 20vh;
+  }
+  .Student-main-card-div > ul {
+    margin: 50px 0px;
+    word-break: break-all;
+    width: 100%;
+    /* padding: 30px; */
+  }
+}

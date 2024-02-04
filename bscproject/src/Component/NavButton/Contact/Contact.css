@@ -1,0 +1,172 @@
+.contact-bg{
+    background: url('../../ImgFolder/contactBg.jpg');
+    background-position: center;
+    opacity: 0.7!important;
+}
+.contact-main-div > .contact-cards{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 50vh;
+    background: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.contact-main-div > .contact-cards > .contact-card{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px gray;
+    background: white;
+    margin: 20px 20px;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.contact-main-div > .contact-cards > .contact-card > h2{
+    color: #b33737;
+    text-transform: capitalize;
+    line-height: 60px;
+}
+.contact-main-div > .contact-cards > .contact-card >p{
+    font-size: 18px;
+    color: gray;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.contact-main-div > .contact-form-div{
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 0px 15px 3px gray;
+}
+.form-left-side{
+    /* background: black; */
+    margin: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 3px gray;
+    border-radius: 15px;
+}
+.form-left-side > img{
+    width: 100%;
+    height: 68vh;
+    border-radius: 15px;
+}
+ .form-right-side{
+    box-shadow: 0px 0px 15px 3px gray;
+    border-radius: 15px;
+    margin: 20px 20px;
+    width: 90%;
+    height: 90vh;
+}
+.form-right-side > h2{
+    margin: 50px 0px 23px 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #6f0505;
+}
+.form-right-side > form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 9px 100px;
+}
+.form-right-side > form > input{
+    width: 80%;
+    height: 5vh;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid gray;
+    /* border-radius: 7px; */
+    padding: 0px 10px;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus{
+    border: none;
+border-bottom: 2px solid rgb(156, 9, 9);
+border-radius: 0px;
+}
+.form-right-side > form > textarea{
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 0px 10px;
+    text-transform: capitalize;
+    /* outline: none; */
+    outline-color: rgb(156, 9, 9);
+   
+}
+form > input[type=submit]{
+    width: 30%;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    background: #034903;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+box-shadow: 0px 0px 10px 0px gray;
+}
+
+@media (max-width:500px) {
+    /* .contact-bg {
+        width: 100%;
+        height: 60vh;
+        background-size: 100% 100%!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        opacity: 0.78;
+    } */
+
+    .contact-main-div > .contact-form-div{
+        display: flex;
+    }
+    .form-left-side{
+        display: none;
+    }
+    .contact-main-div > .contact-cards{
+        height: auto;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .contact-main-div > .contact-cards > .contact-card {
+        width: 70%;
+        margin: 20px 20px;
+    }
+    .form-right-side > form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 9px 0px 0px 30px;
+    }
+    .form-right-side > form > textarea {
+        width: 80%;
+        height: 25vh;
+    }
+    form > input[type=submit] {
+        width: 41%;
+    }
+}
